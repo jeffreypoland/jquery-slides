@@ -35,7 +35,7 @@ Slides is a lightweight touch enabled responsive image slide show plugin.
 
      <!- Link jQuery ->
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
- 	 <!- Link Accordion.js ->
+ 	 <!- Link Slides ->
 	 <script src="js/slides.min.js" ></script>
 
 	 </body>
