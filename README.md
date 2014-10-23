@@ -82,7 +82,7 @@ Slide Title is set to "on" by default. If you do not what the slides to display 
 
 #####Example:
 
-$('.myClass').slides({markers:"off"})
+$('.myClass').slides({slide_title:"off"})
 
 ###Full Width Image
 
