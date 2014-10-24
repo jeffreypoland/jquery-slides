@@ -288,14 +288,9 @@
 
         //get the parent to grab the path from the href and pass it 
         var imgScr = $(findFirstImg).attr('href');
-
-        myThis.parent().find(main_image).fadeTo(100, 0, function() {
-
-          $(this).attr('src', imgScr);
-          $(this).fadeTo(100, 1);
-
-        });
-
+        //assign new image src
+        myThis.parent().find(main_image).attr('src', imgScr);
+         
 
         /* if full width*/
         full(myThis);
@@ -326,13 +321,8 @@
 
         //get the parent to grab the path from the href and pass it 
         var nextImgScr = $(nextImg).parent().attr('href');
-
-        myThis.parent().parent().find(main_image).fadeTo(100, 0, function() {
-
-          $(this).attr('src', nextImgScr);
-          $(this).fadeTo(100, 1);
-
-        });
+        //assign new image src
+        myThis.parent().parent().find(main_image).attr('src', nextImgScr);
 
         /* if full width*/
         full(myThis);
@@ -374,13 +364,9 @@
 
         //get the parent to grab the path from the href and pass it 
         var imageScr = $(lastImg).attr('href');
+        //assign new image src
+         myThis.parent().find(main_image).attr('src', imageScr);
 
-        myThis.parent().find(main_image).fadeTo(100, 0, function() {
-
-          $(this).attr('src', imageScr);
-          $(this).fadeTo(100, 1);
-
-        });
         /* if full width*/
         full(myThis);
 
@@ -406,13 +392,8 @@
         }
         //get the parent to grab the path from the href and pass it 
         var prevImageScr = $(prevImg).parent().attr('href');
-
-        myThis.parent().parent().find(main_image).fadeTo(100, 0, function() {
-
-          $(this).attr('src', prevImageScr);
-          $(this).fadeTo(100, 1);
-
-        });
+        //assign new image src
+         myThis.parent().parent().find(main_image).attr('src', prevImageScr);
         /* if full width*/
         full(myThis);
 
