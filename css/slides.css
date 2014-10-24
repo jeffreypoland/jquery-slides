@@ -17,6 +17,16 @@ a{text-decoration:none; border:none; color:#2A5DB0;}
 .slide_image_title {text-align:center;  display:block; width:100%; background:#F0F0F0;}
 .slide_image_title p {margin:0px; padding:6px 4px; color:black;}
 .slide_image_title a {position:relative; z-index:1500;}
+@media (max-width: 700px) {   
+/* Slides container max height for mobile*/
+.slide_view{
+    max-height:200px;
+    }
+/*max-height for default slides on mobile*/
+.reg{
+    max-height:150px;
+    }
+}/*End Media*/
 /*Back and next buttons*/
 .back{position:absolute; left:5px; z-index:1500; padding:20px; cursor:pointer; background: white; opacity: .8; top:40%; text-decoration:none; font-size: 1.5em;}
 .next{position:absolute; right:5px; z-index:1500; padding:20px; cursor:pointer; background: white; opacity: .8; top:40%; text-decoration:none; font-size:1.5em;}
@@ -24,6 +34,10 @@ a{text-decoration:none; border:none; color:#2A5DB0;}
 .next:hover{opacity:1; text-decoration:none;}
 .back a{color:#909090;}
 .next a{color:#909090;}
+@media (max-width: 700px) {
+/*remove back and next for mobile*/
+.back, .next {display:none;}
+}
 
 /*Play Stop and Pause*/
 .playStop{margin:0 auto; width:72px; margin-bottom:10px;}

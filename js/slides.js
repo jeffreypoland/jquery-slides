@@ -229,7 +229,7 @@
 
         getInterval = setInterval(function() {
           next(getNextSlide);
-        }, 5000);
+        }, 2000);
 
       });
 
@@ -289,10 +289,10 @@
         //get the parent to grab the path from the href and pass it 
         var imgScr = $(findFirstImg).attr('href');
 
-        myThis.parent().find(main_image).fadeTo("fast", 0, function() {
+        myThis.parent().find(main_image).fadeTo(100, 0, function() {
 
           $(this).attr('src', imgScr);
-          $(this).fadeTo('fast', 1);
+          $(this).fadeTo(100, 1);
 
         });
 
@@ -327,10 +327,10 @@
         //get the parent to grab the path from the href and pass it 
         var nextImgScr = $(nextImg).parent().attr('href');
 
-        myThis.parent().parent().find(main_image).fadeTo('fast', 0, function() {
+        myThis.parent().parent().find(main_image).fadeTo(100, 0, function() {
 
           $(this).attr('src', nextImgScr);
-          $(this).fadeTo('fast', 1);
+          $(this).fadeTo(100, 1);
 
         });
 
@@ -375,10 +375,10 @@
         //get the parent to grab the path from the href and pass it 
         var imageScr = $(lastImg).attr('href');
 
-        myThis.parent().find(main_image).fadeTo('fast', 0, function() {
+        myThis.parent().find(main_image).fadeTo(100, 0, function() {
 
           $(this).attr('src', imageScr);
-          $(this).fadeTo('fast', 1);
+          $(this).fadeTo(100, 1);
 
         });
         /* if full width*/
@@ -407,10 +407,10 @@
         //get the parent to grab the path from the href and pass it 
         var prevImageScr = $(prevImg).parent().attr('href');
 
-        myThis.parent().parent().find(main_image).fadeTo('fast', 0, function() {
+        myThis.parent().parent().find(main_image).fadeTo(100, 0, function() {
 
           $(this).attr('src', prevImageScr);
-          $(this).fadeTo('fast', 1);
+          $(this).fadeTo(100, 1);
 
         });
         /* if full width*/
